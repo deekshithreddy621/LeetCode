@@ -13,8 +13,9 @@ class Solution {
                 int x = ele;
                 while(hs.contains(x+1)){
                     x = x+1;
-                    longestLen = Math.max(longestLen, ++currentLen);
+                    ++currentLen;
                 }
+                longestLen = Math.max(longestLen, currentLen);
             }
         }
         return longestLen;
